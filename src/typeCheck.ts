@@ -6,6 +6,19 @@
 * lastModify: 20190828
 * ========================================================================*/
 
+
+
+/*
+* @func
+* @desc 判断一个数据类型是否为原始数据类型
+* @param {any} v
+* @return {bool} 数据类型是否为原始数据类型
+* */
+export function isPrimitive(v:any): boolean {
+  const primitiveArr = ['string', 'number', 'symbol', 'boolean']
+  return primitiveArr.indexOf(typeof v) > -1
+}
+
 /*
 * @func
 * @desc 判断一个数据类型是否为数组
@@ -44,4 +57,14 @@ export function isUndef(v:any): boolean {
 * */
 export function isEmpty(v:any): boolean {
   return isUndef(v) || v === [] || v === '' || v !== v
+}
+
+/*
+* @func
+* @desc 判断一个方法是否为原生函数
+* @param {any} v
+* @return {bool} 方法是否为原生函数
+* */
+export function isNative (v:any): boolean {
+  return typeof v === 'function' && /\{\s\[native code\]\s\}/.test(v.toString())
 }
