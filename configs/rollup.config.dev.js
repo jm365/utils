@@ -14,6 +14,10 @@ export default {
     // format: 'cjs', // nodejs环境下运行的commonjs格式
     // format: 'iife', // 浏览器环境下运行的iife格式
     format: 'umd', // 兼容commonjs、iife、amd的模块
+    /*banner: '// this is banner',
+    footer: '// this is footer',
+    intro: '// this is a intro comment',
+    outro: '// this is a outro comment',*/
   },
   plugins: [
     json(), // 可以直接使用json

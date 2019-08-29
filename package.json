@@ -4,8 +4,8 @@
   "version": "1.0.0",
   "scripts": {
     "build": "npm run build:min && npm run build:dev",
-    "build:min": "rollup --config",
-    "build:dev": "rollup --config",
+    "build:min": "rollup --config ./configs/rollup.config.min.js",
+    "build:dev": "rollup --config ./configs/rollup.config.dev.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {},
