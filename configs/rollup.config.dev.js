@@ -18,6 +18,7 @@ export default {
     footer: '// this is footer',
     intro: '// this is a intro comment',
     outro: '// this is a outro comment',*/
+    strict: true, // 开启严格模式
   },
   plugins: [
     json(), // 可以直接使用json
