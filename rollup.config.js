@@ -3,6 +3,7 @@ import resolve from 'rollup-plugin-node-resolve';
 // import babel from 'rollup-plugin-babel';
 import commonjs from 'rollup-plugin-commonjs'
 import typescript from 'rollup-plugin-typescript';
+import { uglify } from "rollup-plugin-uglify";
 // rollup-plugin-typescript
 
 export default {
@@ -28,7 +29,8 @@ export default {
         'node_modules/my-lib/index.js': [ 'named' ]
       }
     }),
-    typescript()
+    typescript()/*,
+    uglify() // 压缩代码*/
   ],
   // external: ['lodash'], // 将对应木块作为外部依赖，不进行打包
 };

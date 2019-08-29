@@ -1,10 +1,13 @@
-/*
+/*=========================================================================
 * author: yxw
 * description: 数据类型判断
 * create: 20190828
 * lastModify: 20190828
-* */
+* ========================================================================*/
 
+/*
+* @params
+* */
 export function isArray(v:any): boolean {
   return toString.call(v) === '[object Array]'
 }
