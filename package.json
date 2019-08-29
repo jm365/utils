@@ -3,7 +3,9 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "build": "rollup --config",
+    "build": "npm run build:min && npm run build:dev",
+    "build:min": "rollup --config",
+    "build:dev": "rollup --config",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {},
