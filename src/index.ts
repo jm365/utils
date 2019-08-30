@@ -8,11 +8,8 @@ import {
 } from './typeCheck'
 
 exports.isNative = isNative
-
 exports.isNative = isNative
-
 exports.isPrimitive = isPrimitive
-
 exports.isArray = isArray
 exports.isObject = isObject
 exports.isUndef = isUndef

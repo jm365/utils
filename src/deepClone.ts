@@ -5,7 +5,7 @@ import { isObject, isArray } from "./typeCheck";
 * @func
 * @desc 深拷贝一个对象
 * @params {object || array} obj
-* @return {object || array} 拷贝之后的对象
+* @return {object || array} 深拷贝之后的对象
 * */
 export function deepClone(obj) {
   let result
