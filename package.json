@@ -1,7 +1,7 @@
 {
   "name": "@jm/utils",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.0-alpha.1",
   "scripts": {
     "build": "npm run build:min && npm run build:dev",
     "build:min": "rollup --config ./configs/rollup.config.min.js",
@@ -9,6 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {},
+  "main": "./dist/utils.js",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-plugin-external-helpers": "^6.22.0",
