@@ -13,3 +13,8 @@ export const isArray = isArrayFn
 export const isObject = isObjectFn
 export const isUndef = isUndefFn
 export const isEmpty = isEmptyFn
+
+
+
+import { dateFormat as dateFormatFn } from "./date"
+export const dateFormat = dateFormatFn
