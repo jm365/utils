@@ -18,3 +18,7 @@ export const isEmpty = isEmptyFn
 
 import { dateFormat as dateFormatFn } from "./date"
 export const dateFormat = dateFormatFn
+
+
+import { deepClone as deepCloneFn } from './deepClone'
+export const deepClone = deepCloneFn
