@@ -1,24 +1,28 @@
 import {
-  isArray as isArrayFn ,
-  isObject as isObjectFn,
-  isUndef as isUndefFn,
-  isEmpty as isEmptyFn,
-  isPrimitive as isPrimitiveFn,
-  isNative as isNativeFn
+  isArray,
+  isObject,
+  isUndef,
+  isEmpty,
+  isPrimitive,
+  isNative
 } from './typeCheck'
 
-export const isNative = isNativeFn
-export const isPrimitive = isPrimitiveFn
-export const isArray = isArrayFn
-export const isObject = isObjectFn
-export const isUndef = isUndefFn
-export const isEmpty = isEmptyFn
+exports.isNative = isNative
+
+exports.isNative = isNative
+
+exports.isPrimitive = isPrimitive
+
+exports.isArray = isArray
+exports.isObject = isObject
+exports.isUndef = isUndef
+exports.isEmpty = isEmpty
 
 
 
-import { dateFormat as dateFormatFn } from "./date"
-export const dateFormat = dateFormatFn
+import { dateFormat } from "./date"
+exports.dateFormat = dateFormat
 
 
-import { deepClone as deepCloneFn } from './deepClone'
-export const deepClone = deepCloneFn
+import { deepClone } from './deepClone'
+exports.deepClone = deepClone
