@@ -7,7 +7,7 @@ import typescript from 'rollup-plugin-typescript';
 // rollup-plugin-typescript
 
 export default {
-  input: 'src/index.ts', // 入口文件
+  input: 'src/index.js', // 入口文件
   output: {
     file: 'dist/utils.js', // 输出的文件名与路径
     name: 'utils',

@@ -1,26 +1,14 @@
-import {
-  isArray,
-  isObject,
-  isUndef,
-  isEmpty,
-  isPrimitive,
-  isNative
-} from './typeCheck'
-
-exports.isNative = isNative
-/*
-export isPrimitive
-export isArray
-export isObject
-export isUndef
-export isEmpty
-
-
-
-import { dateFormat} from "./date"
-export dateFormat
-
-
-import { deepClone } from './deepClone'
-export deepClone
-*/
+"use strict";
+exports.__esModule = true;
+var typeCheck_1 = require("./typeCheck");
+exports.isNative = typeCheck_1.isNative;
+exports.isNative = typeCheck_1.isNative;
+exports.isPrimitive = typeCheck_1.isPrimitive;
+exports.isArray = typeCheck_1.isArray;
+exports.isObject = typeCheck_1.isObject;
+exports.isUndef = typeCheck_1.isUndef;
+exports.isEmpty = typeCheck_1.isEmpty;
+var date_1 = require("./date");
+exports.dateFormat = date_1.dateFormat;
+var deepClone_1 = require("./deepClone");
+exports.deepClone = deepClone_1.deepClone;
