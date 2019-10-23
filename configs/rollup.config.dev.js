@@ -1,8 +1,8 @@
 import json from 'rollup-plugin-json';
 import resolve from 'rollup-plugin-node-resolve';
-// import babel from 'rollup-plugin-babel';
+import babel from 'rollup-plugin-babel';
 import commonjs from 'rollup-plugin-commonjs'
-import typescript from 'rollup-plugin-typescript';
+// import typescript from 'rollup-plugin-typescript';
 // import { uglify } from "rollup-plugin-uglify";
 // rollup-plugin-typescript
 
@@ -23,9 +23,9 @@ export default {
   plugins: [
     json(), // 可以直接使用json
     resolve(), // 可以识别node_modules里的包
-    /*babel({
-      exclude: 'node_modules/!**' // 只编译我们的源代码
-    }),*/
+    babel({
+      exclude: 'node_modules/**' // 只编译我们的源代码
+    }),
     commonjs({
       namedExports: {
         // left-hand side can be an absolute path, a path
@@ -33,9 +33,9 @@ export default {
         // of a module in node_modules
         'node_modules/my-lib/index.js': [ 'named' ]
       }
-    }),
-    typescript()/*,
-    uglify() // 压缩代码*/
+    })//,
+    // typescript()/*,
+    // uglify() // 压缩代码*/
   ],
   // external: ['lodash'], // 将对应木块作为外部依赖，不进行打包
 };

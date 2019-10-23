@@ -14,7 +14,7 @@
 * @param {any} v
 * @return {bool} 数据类型是否为原始数据类型
 * */
-export function isPrimitive(v:any): boolean {
+export function isPrimitive(v) {
   const primitiveArr = ['string', 'number', 'symbol', 'boolean']
   return primitiveArr.indexOf(typeof v) > -1
 }
@@ -25,7 +25,7 @@ export function isPrimitive(v:any): boolean {
 * @param {any} v
 * @return {bool} 数据类型是否为数组
 * */
-export function isArray(v:any): boolean {
+export function isArray(v) {
   return toString.call(v) === '[object Array]'
 }
 
@@ -35,7 +35,7 @@ export function isArray(v:any): boolean {
 * @param {any} v
 * @return {bool} 数据类型是否为object
 * */
-export function isObject(v:any): boolean {
+export function isObject(v) {
   return toString.call(v) === '[object Object]'
 }
 
@@ -45,7 +45,7 @@ export function isObject(v:any): boolean {
 * @param {any} v
 * @return {bool} 数据类型是否为未定义
 * */
-export function isUndef(v:any): boolean {
+export function isUndef(v) {
   return v === undefined || v === null
 }
 
@@ -55,7 +55,7 @@ export function isUndef(v:any): boolean {
 * @param {any} v
 * @return {bool} 数据是否为空
 * */
-export function isEmpty(v:any): boolean {
+export function isEmpty(v) {
   return isUndef(v) || v === [] || v === '' || v !== v
 }
 
@@ -65,6 +65,6 @@ export function isEmpty(v:any): boolean {
 * @param {any} v
 * @return {bool} 方法是否为原生函数
 * */
-export function isNative (v:any): boolean {
+export function isNative (v) {
   return typeof v === 'function' && /\{\s\[native code\]\s\}/.test(v.toString())
 }

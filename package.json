@@ -12,6 +12,7 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-latest": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
+    "express": "^4.17.1",
     "rollup-plugin-babel": "^3.0.7",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-json": "^4.0.0",
