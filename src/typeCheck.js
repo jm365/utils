@@ -15,7 +15,7 @@
 * @return {bool} 数据类型是否为原始数据类型
 * */
 export function isPrimitive(v) {
-  const primitiveArr = ['string', 'number', 'symbol', 'boolean']
+  var primitiveArr = ['string', 'number', 'symbol', 'boolean']
   return primitiveArr.indexOf(typeof v) > -1
 }
 

@@ -1,6 +1,3 @@
-
-
-
 /*
 * @func
 * @desc 格式化时间
@@ -8,9 +5,9 @@
 * @param {string} fmt 格式化之后输出内容的模板，例：yyyy/MM/dd hh:mm:ss 输出 1998/01/01 12:01:01.
 * @return {string} 根据模板格式化之后的时间字符串
 * */
-export function dateFormat(time:any, fmt:string): string {
-  const d = new Date(time);
-  const o = {
+export function dateFormat(time, fmt) {
+  var d = new Date(time);
+  var o = {
     'M+': d.getMonth() + 1, //月份
     'd+': d.getDate(), //日
     'h+': d.getHours(), //小时
@@ -22,7 +19,7 @@ export function dateFormat(time:any, fmt:string): string {
   if (/(y+)/.test(fmt)) {
     fmt = fmt.replace(RegExp.$1, (d.getFullYear() + '').substr(4 - RegExp.$1.length));
   }
-  for (let k in o) {
+  for (var k in o) {
     if (new RegExp('(' + k + ')').test(fmt)) {
       fmt = fmt.replace(RegExp.$1, (RegExp.$1.length === 1) ? (o[k]) : (('00' + o[k]).substr(('' + o[k]).length)));
     }

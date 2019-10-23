@@ -8,16 +8,16 @@ import { isObject, isArray } from "./typeCheck";
 * @return {object || array} 深拷贝之后的对象
 * */
 export function deepClone(obj) {
-  let result
-  const isArrayType = isArray(obj)
+  var result
+  var isArrayType = isArray(obj)
   if (isArrayType) {
     result = []
   } else {
     result = {}
   }
   if (isObject(obj) || isArrayType) {
-    let childData
-    for (let key in obj) {
+    var childData
+    for (var key in obj) {
 
       // 只拷贝对象本身的属性
       if (obj.hasOwnProperty(key)) {
