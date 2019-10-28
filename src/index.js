@@ -8,6 +8,7 @@ import {
 } from './typeCheck'
 import { dateFormat } from "./date"
 import { deepClone } from './deepClone'
+import { getUrlParams } from './url'
 
 export default {
   isArray: isArray,
@@ -17,5 +18,6 @@ export default {
   isPrimitive: isPrimitive,
   isNative: isNative,
   dateFormat: dateFormat,
-  deepClone: deepClone
+  deepClone: deepClone,
+  getUrlParams: getUrlParams
 }

@@ -6,4 +6,3 @@
 1.3api文档
 
 # 2.待加入的方法
-2.1getUrlParams,从url中获取参数
