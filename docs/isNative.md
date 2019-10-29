@@ -1,18 +1,18 @@
-#isNative(fn),新增于v0.0.1
+# isNative(fn),新增于v0.0.1
 
 判断一个方法是否为原生
 
-##入参
+## 入参
 
 | 参数名 | 类型 | 备注 |
 | ------ | ---- | ---- |
 | fn   | Function | 需要判断方法 |
 
-##return
+## return
 
 (Boolean): 是否为原生,是=true,否=false
 
-##example
+## example
 
     const utils = require('jm365@utils')
     const notNativeFn = () => {
