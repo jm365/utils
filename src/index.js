@@ -9,8 +9,11 @@ import {
 import { dateFormat } from "./date"
 import { deepClone } from './deepClone'
 import { getUrlParams } from './url'
+import { isIphoneX, isIOS } from "./runtimeCheck";
 
 export default {
+  isIOS: isIOS,
+  isIphoneX: isIphoneX,
   isArray: isArray,
   isObject: isObject,
   isUndef: isUndef,
