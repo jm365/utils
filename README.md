@@ -2,7 +2,9 @@
 
 ## Installation
 ### In browser
-    npm i @jm365/utils // todo:需要获取cdn地址
+    <script src="https://cdn.jsdelivr.net/npm/@jm365/utils@1.0.1/utils.min.js"></script>
+[![](https://data.jsdelivr.com/v1/package/npm/@jm365/utils/badge)](https://www.jsdelivr.com/package/npm/@jm365/utils)
+
 ### With npm
     npm i @jm365/utils
 
