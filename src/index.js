@@ -10,8 +10,10 @@ import { dateFormat } from "./date"
 import { deepClone } from './deepClone'
 import { getUrlParams } from './url'
 import { isIphoneX, isIOS } from "./runtimeCheck";
+import { getElOffsetTop } from './getElOffsetTop'
 
 export default {
+  getElOffsetTop: getElOffsetTop,
   isIOS: isIOS,
   isIphoneX: isIphoneX,
   isArray: isArray,

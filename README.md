@@ -10,7 +10,9 @@
 
 ## Usage
 ### In browser
-    utils.isIphoneX() // false / true
+    const now = utils.dateFormat(Date.now(), yyyy/MM/dd hh:mm:ss)
+    console.log(now) // 2019/08/08 12:01:01
 ### With npm
     const utils = require('@jm365/utils')
-    utils.isIphoneX() // false / true
+    const now = utils.dateFormat(Date.now(), yyyy/MM/dd hh:mm:ss)
+    console.log(now) // 2019/08/08 12:01:01

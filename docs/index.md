@@ -16,3 +16,10 @@
     
 * 从页面url中获取参数：
     * [getUrlParams](https://github.com/jm365/utils/blob/master/docs/getUrlParams.md) -- 从页面url中获取参数
+    
+* 运行环境判断：
+    * [isIphoneX](https://github.com/jm365/utils/blob/master/docs/isIphoneX.md) -- 判断是否为iPhone X系列手机，因为此系列手机底部有黑色横条，需要做兼容处理
+    * [isIOS](https://github.com/jm365/utils/blob/master/docs/isIOS.md) -- 判断是否为isIOS手机，因为某些场景IOS跟安卓有不同的业务逻辑
+
+* 获取Element离文档顶部内边距的距离
+    * [getElOffsetTop](https://github.com/jm365/utils/blob/master/docs/getElOffsetTop.md)
