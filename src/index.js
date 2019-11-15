@@ -11,8 +11,12 @@ import { deepClone } from './deepClone'
 import { getUrlParams } from './url'
 import { isIphoneX, isIOS } from "./runtimeCheck";
 import { getElOffsetTop } from './getElOffsetTop'
+import { getCookie, getAllCookies } from './cookie'
+
 
 export default {
+  getCookie,
+  getAllCookies,
   getElOffsetTop: getElOffsetTop,
   isIOS: isIOS,
   isIphoneX: isIphoneX,

@@ -1,8 +1,10 @@
 # @jm365/utils [documentation](https://github.com/jm365/utils/blob/master/docs/index.md)
 
+与项目业务无耦合关系的公共方法库
+
 ## Installation
 ### In browser
-    <script src="https://cdn.jsdelivr.net/npm/@jm365/utils@1.0.6/utils.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@jm365/utils@1.0.7/utils.min.js"></script>
 [![](https://data.jsdelivr.com/v1/package/npm/@jm365/utils/badge)](https://www.jsdelivr.com/package/npm/@jm365/utils)
 
 ### With npm

@@ -23,3 +23,7 @@
 
 * 获取Element离文档顶部内边距的距离
     * [getElOffsetTop](https://github.com/jm365/utils/blob/master/docs/getElOffsetTop.md)
+
+* cookie相关
+    *[getCookie](https://github.com/jm365/utils/blob/master/docs/getCookie.md) -- 获取当前页面对应cookie指定名称的值
+    *[getCookie](https://github.com/jm365/utils/blob/master/docs/getCookie.md) -- 获取当前页面`cookie`对应的`Object`

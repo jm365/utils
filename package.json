@@ -1,6 +1,6 @@
 {
   "name": "@jm365/utils",
-  "version": "1.0.3",
+  "version": "1.0.7",
   "description": "javascript utils",
   "private": true,
   "main": "./dist/utils.js",
