@@ -21,8 +21,8 @@ export function isIOS() {
 * @return {bool} 是否为iPhone X系列手机
 * */
 export function isIphoneX() {
-  var isIOS =  isIOS()
-  if (isIOS) {
+  var isIOSRuntime =  isIOS()
+  if (isIOSRuntime) {
     // iPhone X、iPhone XS---812,375  iPhone XS Max、iPhone XR-----896，414
     if ((screen.height === 812 && screen.width === 375) || (screen.height === 896 && screen.width === 414)) {
       return true

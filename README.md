@@ -2,7 +2,7 @@
 
 ## Installation
 ### In browser
-    <script src="https://cdn.jsdelivr.net/npm/@jm365/utils@1.0.4/utils.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@jm365/utils@1.0.6/utils.min.js"></script>
 [![](https://data.jsdelivr.com/v1/package/npm/@jm365/utils/badge)](https://www.jsdelivr.com/package/npm/@jm365/utils)
 
 ### With npm
