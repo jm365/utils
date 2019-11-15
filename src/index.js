@@ -15,8 +15,8 @@ import { getCookie, getAllCookies } from './cookie'
 
 
 export default {
-  getCookie,
-  getAllCookies,
+  getCookie: getCookie,
+  getAllCookies: getAllCookies,
   getElOffsetTop: getElOffsetTop,
   isIOS: isIOS,
   isIphoneX: isIphoneX,
