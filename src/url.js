@@ -1,6 +1,6 @@
 export function getUrlParams(key) {
   var result = {}
-  var searchStr = location.search || location.href.split('?')[1] // 为了兼容不规则处理url的情况
+  var searchStr = location.search || location.href.split('?')[1] || '' // 为了兼容不规则处理url的情况
   searchStr = decodeURIComponent(searchStr.replace(/^\?/, ''))
   var searchParamsArr = searchStr.split('&')
   var keyNameArr
