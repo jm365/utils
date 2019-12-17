@@ -8,13 +8,14 @@ import {
 } from './typeCheck'
 import { dateFormat } from "./date"
 import { deepClone } from './deepClone'
-import { getUrlParams } from './url'
+import { getUrlParams, formatObjToUrlQueryStr } from './url'
 import { isIphoneX, isIOS } from "./runtimeCheck";
 import { getElOffsetTop } from './getElOffsetTop'
 import { getCookie, getAllCookies } from './cookie'
 
 
 export default {
+  formatObjToUrlQueryStr: formatObjToUrlQueryStr,
   getCookie: getCookie,
   getAllCookies: getAllCookies,
   getElOffsetTop: getElOffsetTop,
