@@ -30,3 +30,12 @@ export function isIphoneX() {
   }
   return false
 }
+
+/*
+* @func
+* @desc 判断是否为微信
+* @return {bool} 是否为微信
+* */
+export function isWechat() {
+  return !!navigator.userAgent.match(/MicroMessenger/ig);
+}

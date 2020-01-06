@@ -28,12 +28,19 @@ export function getUrlParams(key) {
 * */
 export function formatObjToUrlQueryStr(obj, configs) {
   var queryStr = ''
+  configs = configs || {}
+  var isNeedEncode = !!configs.isNeedEncode
+  var value
   if (isObject(obj)) {
     for (var key in obj) {
+      value = obj[key]
       if (obj.hasOwnProperty(key)
-        && (typeof obj[key] === 'string' || typeof obj[key] === 'number')) {
+        && (typeof value === 'string' || typeof value === 'number')) {
+        if (isNeedEncode) {
+          value = encodeURIComponent(value)
+        }
         queryStr = !!queryStr ? (queryStr + '&') : queryStr
-        queryStr += key + '=' + obj[key]
+        queryStr += key + '=' + value
       }
     }
   }
