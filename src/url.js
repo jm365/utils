@@ -6,10 +6,17 @@ export function getUrlParams(key) {
   searchStr = decodeURIComponent(searchStr.replace(/^\?/, ''))
   var searchParamsArr = searchStr.split('&')
   var keyNameArr
+  var reg
+  var separatorIndex
   if (searchStr) {
     searchParamsArr.forEach(function(item) {
       keyNameArr = item.split('=')
-      result[keyNameArr[0]] = keyNameArr[1]
+      separatorIndex = item.indexOf('=')
+      if (separatorIndex > -1) {
+        result[item.slice(0, separatorIndex)] = item.slice(separatorIndex + 1)
+      } else {
+        result[item] = ''
+      }
     })
   }
   if (key && typeof key === 'string') {
