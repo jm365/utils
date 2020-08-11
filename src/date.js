@@ -6,6 +6,9 @@
 * @return {string} 根据模板格式化之后的时间字符串
 * */
 export function dateFormat(time, fmt) {
+  if (time === '' || time === null || time === undefined) {
+    return ''
+  }
   var d = new Date(time);
   var o = {
     'M+': d.getMonth() + 1, //月份
